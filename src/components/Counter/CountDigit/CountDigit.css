@@ -1,0 +1,12 @@
+.countDigit{
+    width:70px;
+    height:60px;
+    background: #5f27cd;
+    border-radius:15px;
+    color: aliceblue;
+    
+}
+.countDigit h2{
+    line-height: 60px;
+    font-weight:700;
+}
