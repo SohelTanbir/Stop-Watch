@@ -52,7 +52,12 @@ const [pause, setPause] =  useState(0)
         setActiveBtn(newstate)
     }
     const handleResume = ()=>{
-        alert('Resume Counter');
+        const clearId = setInterval(()=>{
+            getMiliSecond();
+        },10)
+        setPause(clearId);
+        const newstate = { ...activeBtn, start: false, push: true, resume:false }
+        setActiveBtn(newstate)
     }
    if(activeBtn.start === false && activeBtn.resume == false){
          puseBtn = <div className="col">
